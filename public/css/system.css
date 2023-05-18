@@ -1,0 +1,387 @@
+.KotakHeader{
+    position: sticky;
+    border: black;
+    background: linear-gradient(to top left, #2bff00 0%, #f2ff00 100%);
+    padding: 35px;
+    top: 0;
+    z-index: 2;
+}
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    right: 50px;
+    border: #000000;
+  }
+  
+  .dropbtn {
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 50%;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    top: 75px;
+    right: 0; 
+  }
+  
+  .dropdown-content a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 0;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropbtn img.dropdown-img  {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+  }
+  .dropdown-content img.dropdown-content-img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+  }
+  .ProBtn{
+    position: absolute;
+    display: inline-block;
+    border: #000000;
+    right: 175px;
+  }
+  .Kotak2 {
+    border: 1px solid black; 
+    width: 50%; 
+    margin-left: 10px;
+    box-sizing: border-box; 
+    padding: 20px; 
+    border-radius: 15px;
+    margin-top: 75px;
+    font-size: 35px;
+    display: inline-block;
+   vertical-align: top;
+  }
+  .kotak3{
+    border: 1px solid black; 
+    box-sizing: border-box; 
+    padding: 20px; 
+  }
+  .kotakdalam{
+    border: 1px solid black; 
+    box-sizing: border-box; 
+    padding: 20px; 
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+  }
+  .kotakdalam img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  .kotakHeader2{
+    font-size: 20px;
+    border: 1px solid black; 
+    box-sizing: border-box; 
+    padding: 20px; 
+    background: linear-gradient(to top left, #0df853 0%, #09f3d4 100%);
+    position: relative; /* add position relative to the header element */
+    z-index: 1;
+  }
+  
+  .like-btn {
+    display: inline-block;
+    position: absolute; /* change position to absolute */
+    top: 50%; /* position the button at the center of the header element */
+    right: 20px; /* position the button 20px from the right edge of the header element */
+    transform: translateY(-50%); /* move the button up by 50% of its own height */
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden; /* menambahkan properti overflow: hidden agar gambar bulat tidak terpotong */
+  }
+  
+  .like-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url('Like.png'); /* ganti dengan URL file gambar tombol like */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 50%; /* menambahkan properti border-radius: 50% untuk membuat gambar berbentuk bulat */
+  }
+  .like-btn:hover .like-icon {
+    transform: scale(1.2);
+    background-color: #040404;
+  }
+  
+  .like-count {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  @keyframes like-animation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .terbaru{
+    color: rgb(14, 231, 130);
+  }
+  .kotakTren{
+    border: 1px solid black; 
+    width: 37%; 
+    margin-left: 10px;
+    box-sizing: border-box; 
+    padding: 20px; 
+    border-radius: 15px;
+    margin-top: 75px;
+    font-size: 35px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .kotakHeaderTren{
+    font-size: 20px;
+    border: 1px solid black; 
+    box-sizing: border-box; 
+    padding: 20px; 
+    background: linear-gradient(to top left, #f8cd0d 0%, #f33c09 100%);
+    position: relative;
+  }
+  .trending{
+    color: rgb(221, 66, 15);
+  }
+  .upload{
+    border: 1px solid black; 
+    box-sizing: border-box; 
+    padding: 20px; 
+    width: 60%;
+    margin: 20px auto;
+    margin-top: 50px;
+    border-radius: 15px;
+  }
+  .tomupload button {
+    background-color: #33ff00; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    position: relative; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    border-radius: 20px;
+    margin-top: 30px;
+  }
+  
+  .tomupload button:hover {
+    background-color: #00ffdd; 
+    cursor: pointer; 
+  }
+  .updes{
+    font-size: 26px;
+    color: #4ffb05;
+  }
+  .fix{
+    position: relative;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    background: rgba(244, 242, 242, 0.94);
+    border: 1px solid black; 
+}
+
+.fix span{
+    color: #222;
+    width: 40px;
+    line-height: 45px;
+}
+.fix input{
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #222;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+.fit{
+    position: relative;
+    height: 60px;
+    width: 45%;
+    display: flex;
+}
+
+.fit span{
+    color: #222;
+    width: 40px;
+    line-height: 45px;
+}
+.fit input{
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #222;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+.High-btn {
+  display: inline-block;
+  position: absolute; 
+  top: 50%; /* position the button at the center of the header element */
+  right: 20px; /* position the button 20px from the right edge of the header element */
+  transform: translateY(-50%); /* move the button up by 50% of its own height */
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden; /* menambahkan properti overflow: hidden agar gambar bulat tidak terpotong */
+}
+
+@keyframes High-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.KotakKeranjang{
+  border: 1px solid black;
+  width: 40%;
+  margin-left: 10px;
+  box-sizing: border-box; 
+  padding: 20px; 
+  border-radius: 15px;
+  margin-top: 75px;
+  font-size: 35px;
+  display: inline-block;
+  vertical-align: top;
+  flex-grow: 1;
+  margin-left: 0;
+}
+.kotakharga{
+  border: 1px solid black;
+  margin-left: 0;
+  box-sizing: border-box; 
+  font-size: 27px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 100%;
+}
+.Low-btn {
+  display: inline-block;
+  position: absolute; 
+  top: 50%; /* position the button at the center of the header element */
+  right: 20px; /* position the button 20px from the right edge of the header element */
+  transform: translateY(-50%); /* move the button up by 50% of its own height */
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden; /* menambahkan properti overflow: hidden agar gambar bulat tidak terpotong */
+}
+
+@keyframes Low-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+  .fit-btn {
+    display: inline-block;
+    position: absolute; 
+    top: 50%; /* position the button at the center of the header element */
+    right: 20px; /* position the button 20px from the right edge of the header element */
+    transform: translateY(-50%); /* move the button up by 50% of its own height */
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden; /* menambahkan properti overflow: hidden agar gambar bulat tidak terpotong */
+  }
+  
+  @keyframes fit-animation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .kotakcatatan{
+    border: 1px solid black;
+    background-color: #ffae0b;
+    width: 40%;
+    flex-grow: 1;
+    border-radius: 15px;
+    height: 220px;
+    margin-top: 75px;
+    margin-right: 0;
+  }
+  .kotakcatatan img{
+    height: 10px;
+    width: 10px;
+  }
+  .koti {
+    display: flex;
+    flex-direction: row;
+  }
+  .Halut{
+    height: 85px;
+    width: 200px;
+    margin-left: 0;
+    border-radius: 60%;
+  }
